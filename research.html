@@ -2,90 +2,212 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Yue Cao - Research</title>
-  
-  <!-- Load W3CSS (e.g., local file newStyle.css) -->
-  <link rel="stylesheet" href="newStyle.css" />
-  <!-- Load your custom stylesheet -->
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research | Yue Cao</title>
+  <link rel="stylesheet" href="style26.css" />
 </head>
-<body class="w3-light-grey">
-  <!-- HEADER -->
-  <header class="w3-container w3-padding-16 w3-myblue1">
-    <h1>Yue Cao</h1>
-    <p>Assistant Teaching Professor at Syracuse University</p>
-  </header>
+<body>
+  <header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">Yue Cao</a>
+    <nav class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="research.html" class="active">Research</a>
+      <a href="teaching.html">Teaching</a>
+    </nav>
+  </div>
+</header>
 
-  <!-- NAVIGATION BAR -->
-  <nav class="w3-bar w3-dark-grey w3-padding-small w3-center">
-    <a href="index.html" class="w3-bar-item w3-button w3-hover-light-grey">
-      Home
-    </a>
-    <a href="teaching.html" class="w3-bar-item w3-button w3-hover-light-grey">
-      Teaching
-    </a>
-    <a href="research.html" class="w3-bar-item w3-button w3-hover-light-grey active">
-      Research
-    </a>
-  </nav>
-
-  <!-- MAIN CONTENT -->
-  <main class="w3-container w3-white w3-padding-16" style="max-width: 800px; margin: 2rem auto;">
-    <section class="w3-container">
-      <h2>Research</h2>
-      <p>
-        Discover Yue Cao’s research areas and recent publications.
-      </p>
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="section-kicker">Research</p>
+        <h1 class="page-title">Publications and Projects</h1>
+		 <p class="hero-keywords">
+          Robotics · Artificial Intelligence · Engineering Education
+        </p>
+      </div>
     </section>
 
-    <section class="w3-container w3-padding-32" id="research">
-  <h2>Publication</h2>
+    <section class="section">
+      <div class="container">
+        <div class="card-grid">
+		
+		<article class="card media-card">
+            <a href="Pic/Southeast_overview.png" class="img-popup">
+  <img src="Pic/Southeast_overview.png" class="card-image">
+</a>
+            <div class="card-body">
+			<div class="card-topline">
+                <span class="tag">IEEE SoutheastCon</span>
+                <span class="year">2026</span>
+              </div>
+              <h3>Large Language Models for Nodal Analysis in Circuits Education: An Evaluation</h3>
+              <p class="meta">Yue Cao · IEEE SoutheastCon · 2026 Huntsville AL</p>
+              <p>
+                Evaluations of the state-of-the-art LLMs in solving undergraduate-level Nodal Analysis tasks.
+              </p>
+              <div class="card-links">
+  <a href="docs_25/paper_slides/SoutheastCon26_slides.pdf" target="_blank">Slides</a>
+</div>
+            </div>
+          </article>
+		  
+		  
+          <article class="card media-card">
+             <a href="Pic/SEC_overview.png" class="img-popup">
+  <img src="Pic/SEC_overview.png" class="card-image">
+</a>
+            <div class="card-body">
+			 <div class="card-topline">
+                <span class="tag">ACM/IEEE SEC</span>
+                <span class="year">2025</span>
+              </div>
+              <h3>Performance Evaluation of Whisper-Series Speech Transcription Models on Raspberry Pi</h3>
+              <p class="meta">Yue Cao · ACM/IEEE Symposium on Edge Computing - Edge Intelligence Workshop · 2025 Arlington VA</p>
+              <p>
+                Benchmarking Whisper & Faster Whisper models on Raspberry Pi platforms, including latency, memory usage, and thermal behavior.
+              </p>
+              <div class="card-links">
+                <a href="https://dl.acm.org/doi/10.1145/3769102.3774244" target="_blank">Paper</a>
+                <a href="docs_25/paper_slides/SEC25_RaspPi_slides.pdf" target="_blank">Slides</a>
+              </div>
+            </div>
+          </article>
 
-  <!-- First research paper -->
-  <div class="w3-container w3-padding-16 w3-card w3-margin-bottom">
-    <h3>Ground Manipulator Primitive Tasks to Executable Actions using Large Language Models</h3>
-    <p class="w3-justify">
-      <b>Yue Cao</b> and C. S. George Lee, AAAI Fall Symposium on Unifying 
-      Representations for Robot Application Development (UR-RAD), 2023<br>
-      <a style="color: #447ec9" href="https://ojs.aaai.org/index.php/AAAI-SS/article/view/27720">Paper</a>
-    </p>
-    <img style="width:66%;" src="docs/AAAIUR-RAD_abstract.png" alt="UR-RAD Abstract">
-  </div>
+          <article class="card media-card">
+			<a href="Pic/Thesis_overview.png" class="img-popup">
+  <img src="Pic/Thesis_overview.png" class="card-image">
+</a>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="tag">Ph.D. Dissertation</span>
+                <span class="year">2024</span>
+              </div>
+              <h3>Towards Manipulator Task-Oriented Programming: Automating Behavior-Tree Configuration</h3>
+              <p class="meta">Yue Cao · Purdue University, ECE, West Lafayette · 2024</p>
+              <p>
+                Task-Oriented Programming: Program manipulators in terms of high-level tasks, instead of in terms of explicit motions.
 
-  <!-- Second research paper -->
-  <div class="w3-container w3-padding-16 w3-card w3-margin-bottom">
-    <h3>Robot Behavior-Tree-Based Task Generation with Large Language Models</h3>
-    <p class="w3-justify">
-      <b>Yue Cao</b> and C. S. George Lee, AAAI Spring Symposium on Challenges
-      Requiring the Combination of Machine Learning and Knowledge Engineering 
-      (AAAI-MAKE), 2023<br>
-      <a style="color: #447ec9" href="https://ceur-ws.org/Vol-3433/paper4.pdf">Paper</a> |
-      <a style="color: #447ec9" href="docs/AAAIMake_slides.pdf">Slides</a> |
-      <a style="color: #447ec9" href="docs/IROS22.bib" target="_blank">bib</a>
-    </p>
-    <img style="width:66%;" src="docs/AAAIMake_abstract.png" alt="AAAI-MAKE Abstract">
-  </div>
+              </p>
+			  <p>
+			  Also as Poster at the Northeast Robotics Colloquium, Ithaca NY, 2025.
+</p>
+              <div class="card-links">
+                <a href="https://hammer.purdue.edu/articles/thesis/Towards_Manipulator_Task-Oriented_Programming_Automating_Behavior-Tree_Configuration/26198237" target="_blank">Paper</a>
+                <a href="docs_25/paper_slides/PhDThesis_slides.pdf" target="_blank">Slides</a>
+              </div>
+            </div>
+          </article>
+		  
+		     <article class="card media-card">
+			<a href="Pic/AAAI_TaskFrame_overview.png" class="img-popup">
+  <img src="Pic/AAAI_TaskFrame_overview.png" class="card-image">
+</a>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="tag">AAAI Symposium</span>
+                <span class="year">2023</span>
+              </div>
+              <h3>Ground Manipulator Primitive Tasks to Executable Actions using Large Language Models</h3>
+              <p class="meta">Yue Cao and C. S. George Lee ·  AAAI Fall Symposium on Unifying Representations for Robot Application Development · 2023 Arlington VA</p>
+              <p>
+                Enabling LLMs to generate position/force set-points for manipulator hybrid control.
+              </p>
+			  <p>
+			  Also as Late-Breaking Results at IROS, Detroit MI, 2023.
+</p>
+              <div class="card-links">
+                <a href="https://ojs.aaai.org/index.php/AAAI-SS/article/view/27720" target="_blank">Paper</a>
+                <a href="docs_25/paper_slides/AAAIUnify23_slides.pdf" target="_blank">Slides</a>
+              </div>
+            </div>
+          </article>
+		  
+		  
+<article class="card media-card">
+			<a href="Pic/AAAI_LLM_overview.png" class="img-popup">
+  <img src="Pic/AAAI_LLM_overview.png" class="card-image">
+</a>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="tag">AAAI Symposium</span>
+                <span class="year">2023</span>
+              </div>
+              <h3>Robot Behavior-Tree-Based Task Generation with Large Language Models</h3>
+              <p class="meta">Yue Cao and C. S. George Lee ·  AAAI Spring Symposium on Challenges Requiring the Combination of Machine Learning and Knowledge Engineerin · 2023 San Francisco CA</p>
+              <p>
+			   Enabling a hierarchical-structured robot task generation.
+                Three key components: Phase-Step prompt, behavior-tree construction, and automatic source-task selection
+              </p>
+              <div class="card-links">
+                <a href="https://par.nsf.gov/servlets/purl/10474708" target="_blank">Paper</a>
+                <a href="docs_25/paper_slides/AAAIMake23_slides.pdf" target="_blank">Slides</a>
+              </div>
+            </div>
+          </article>
+		  
+		<article class="card media-card">
+			<a href="Pic/IROS22_overview.png" class="img-popup">
+  <img src="Pic/IROS22_overview.png" class="card-image">
+</a>
+            <div class="card-body">
+              <div class="card-topline">
+                <span class="tag">IROS</span>
+                <span class="year">2022</span>
+              </div>
+              <h3>Behavior-Tree Embeddings for Robot Task-Level Knowledge</h3>
+              <p class="meta">Yue Cao and C. S. George Lee · IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS) · 2022 Kyoto Japan</p>
+              <p>
+                 Converting symbolic task knowledge to numerical form.<br>
+				 A new approach to reuse task knowledge.<br>Enabling machine learning on symbolic tasks.
+              </p>
+              <div class="card-links">
+                <a href="https://ieeexplore.ieee.org/document/9981774" target="_blank">Paper</a>
+                <a href="docs_25/paper_slides/IROS22_slides.pdf" target="_blank">Slides</a>
+              </div>
+            </div>
+          </article>
 
-  <!-- Third research paper -->
-  <div class="w3-container w3-padding-16 w3-card w3-margin-bottom">
-    <h3>Behavior-Tree Embeddings for Robot Task-Level Knowledge</h3>
-    <p class="w3-justify">
-      <b>Yue Cao</b> and C. S. George Lee, IEEE/RSJ International Conference on 
-      Intelligent Robots and Systems (IROS), 2022<br>
-      <a style="color: #447ec9" href="https://ieeexplore.ieee.org/abstract/document/9981774">Paper</a> |
-      <a style="color: #447ec9" href="docs/IROS22_slides.pdf">Slides</a> |
-      <a style="color: #447ec9" href="docs/IROS22.bib" target="_blank">bib</a>
-    </p>
-    <img style="width:66%;" src="docs/IROS22_abstract.png" alt="IROS22 Abstract">
-  </div>
-</section>
-
+		  
+		  
+        </div>
+      </div>
+    </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="w3-center w3-padding-16 w3-dark-grey">
-    <p>&copy; 2025 Yue Cao | Syracuse University</p>
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Yue Cao · Syracuse University</p>
+    </div>
   </footer>
+  
+  <div id="imgModal" class="img-modal">
+  <span class="img-close">&times;</span>
+  <img class="img-modal-content" id="imgModalContent">
+</div>
+
+<script>
+const modal = document.getElementById("imgModal");
+const modalImg = document.getElementById("imgModalContent");
+const closeBtn = document.querySelector(".img-close");
+
+document.querySelectorAll(".img-popup img").forEach(img => {
+  img.onclick = function () {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+  };
+});
+
+closeBtn.onclick = function () {
+  modal.style.display = "none";
+};
+
+modal.onclick = function (e) {
+  if (e.target === modal) {
+    modal.style.display = "none";
+  }
+};
+</script>
 </body>
 </html>
