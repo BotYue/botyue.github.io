@@ -678,7 +678,7 @@ a:hover {
 
 .demo-card p {
   margin: 0 0 0.6rem;
-  color: var(--muted);
+  color: var(--text);
   font-size: 0.9rem;
 }
 
