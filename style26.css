@@ -659,7 +659,6 @@ a:hover {
   cursor: pointer;
 }
 
-
 /* ---------- Demos page ---------- */
 
 .demo-card {
@@ -693,7 +692,7 @@ a:hover {
 .video-caption {
   margin: 0.5rem 0 0;
   font-size: 0.85rem;
-  color: var(--muted);
+  color: var(--text);
 }
 
 .video-fallback {
@@ -793,5 +792,17 @@ a:hover {
 
   .card-image {
     height: 190px;
+  }
+  
+  .pub-item,
+  .course-item {
+    flex-direction: column;
+  }
+
+  .pub-thumb,
+  .course-thumb,
+  .pub-thumb img,
+  .course-thumb img {
+    width: 100%;
   }
 }
