@@ -659,6 +659,7 @@ a:hover {
   cursor: pointer;
 }
 
+
 /* ---------- Demos page ---------- */
 
 .demo-card {
@@ -679,6 +680,51 @@ a:hover {
   margin: 0 0 0.6rem;
   color: var(--muted);
   font-size: 0.9rem;
+}
+
+.video-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 0.9rem;
+}
+
+
+.video-caption {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.video-fallback {
+  position: relative;
+  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border: 1px solid var(--line);
+}
+
+.video-fallback img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.play-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 48px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
 }
 
 /* ---------- Responsive ---------- */
@@ -710,7 +756,8 @@ a:hover {
   }
 
   .split-cards,
-  .card-grid {
+  .card-grid,
+  .video-row {
     grid-template-columns: 1fr;
   }
 
@@ -718,6 +765,12 @@ a:hover {
   .timeline li {
     grid-template-columns: 1fr;
     gap: 0.35rem;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 980px) {
+  .video-row {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
